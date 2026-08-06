@@ -2,10 +2,10 @@ const http = require('http')
 const servidor = http.createServer((req,res) => {
     res.statusCode = 200
     res.setHeader('Content-Type', 'text/plain;charset=utf-8')
-    res.end('Servidor rodando')
+    res.end('Servidor rodando \n')
 })
 
-servidor.listen(3000, () => {
+servidor.listen(3000,'127.0.0.1', () => {
     console.log('Servidor rodando na porta 3000')
 })
 
