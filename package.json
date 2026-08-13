@@ -1,24 +1,24 @@
 {
-  "name": "nodejs",
+  "name": "meuapp",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "scripts": {
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "Meu Aplicativo NodeJS",
+  "keywords": [],
+  "homepage": "https://github.com/MatheusGiovani633/NodeJS#readme",
+  "bugs": {
+    "url": "https://github.com/MatheusGiovani633/NodeJS/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MatheusGiovani633/NodeJS.git"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
+  "author": "Matheus Giovani da Silva Pereira",
   "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/MatheusGiovani633/NodeJS/issues"
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon -L app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/MatheusGiovani633/NodeJS#readme",
   "dependencies": {
     "express": "^5.2.1",
     "express-flash": "^0.0.2",
@@ -26,5 +26,6 @@
     "http": "^0.0.1-security",
     "nodemon": "^3.1.14",
     "sequelize": "^6.37.8"
-  }
+  },
+  "devDependencies": {}
 }
