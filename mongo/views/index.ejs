@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+    <h1><%= titulo %></h1>
+
+    <% if (usuarios.length === 0) { %>
+        <p>Nenhum usuário cadastrado.</p>
+    <% } else { %>
+            <% usuarios.forEach(u => { %>
+                <li><%= u.nome %> :<%= u.idade %> anos - <%= u.email %></li>
+            <% }) %>
+    <% } %>
+</body>
+</html>
