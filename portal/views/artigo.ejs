@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+
+<article class="mx-auto" style="max-width: 760px;">
+
+    <a href="/" class="btn btn-link px-0 mb-3">&larr; Voltar</a>
+
+    <h1 class="h2"><%= artigo.titulo %></h1>
+
+    <p class="text-muted small mb-4">
+        Publicado em <%= artigo.criadoEm.toLocaleDateString('pt-BR') %>
+        <% if (artigo.destaque) { %>
+            <span class="badge bg-primary ms-2">Destaque</span>
+        <% } %>
+    </p>
+
+    <% if (artigo.imagem) { %>
+        <img src="<%= artigo.imagem %>" alt="<%= artigo.titulo %>" class="img-fluid rounded mb-4 artigo-capa">
+    <% } %>
+
+    <p class="lead"><%= artigo.resumo %></p>
+
+    <div class="artigo-conteudo"><%= artigo.conteudo %></div>
+
+</article>
+
+<%- include('partials/footer') %>

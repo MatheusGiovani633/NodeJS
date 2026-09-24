@@ -1,0 +1,49 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+}
+
+main {
+  flex: 1;
+}
+
+.card-noticia img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.carousel {
+  height: 400px;
+}
+.carousel .carousel-inner,
+.carousel .carousel-item {
+  height: 400px;
+}
+.carousel img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.carousel .carousel-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent 55%);
+}
+.carousel .carousel-caption {
+  z-index: 2;
+}
+
+.artigo-capa {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+
+.artigo-conteudo {
+  white-space: pre-wrap;
+}
+
+/*# sourceMappingURL=styles.css.map */
